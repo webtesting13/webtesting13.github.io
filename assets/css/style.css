@@ -1,0 +1,614 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-size: 1.2em;
+	background-color: #fff;
+	color: #555;
+}
+
+p{
+	padding: 0 0 20px 0;
+	line-height: 1.7em;
+}
+
+input[type="text"], input[type="password"], input[type="search"]{
+	color: #5d5d5d;
+	width: 60%;
+	padding: 8px;
+}
+
+input, textarea{
+	outline: none;
+	border: none;
+	border: solid 1px #f2f2f2;
+}
+
+h2, h1{
+	font: normal 170% 'century gothic', arial;
+	margin: 0 0 15px 0;
+	padding: 15px 0 5px 0;
+	color: #000;
+}
+
+h2{
+	font-size: 140%;
+}
+
+a, a:hover{
+	outline: none;
+	text-decoration: underline;
+	color: #aeb002;
+}
+
+ul{
+	margin: 2px 0 22px 17px;
+}
+
+ul li{
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+	line-height: 1.5em;
+}
+
+hr{
+	border: solid 1px #f3f3f3;
+}
+
+.header{
+	background-color: #8B658B;
+	height: 177px;
+	font-size: 0.8em;
+	margin-left: 0px;
+	margin-right: 0px;
+	min-width: : 900px; 
+}
+
+.main, .logo, .menubar, .site_content, .footer {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo {
+	width: 880px;
+	padding-bottom: 40px;
+}
+
+.logo h1, .logo h2 {
+	font: normal 300% 'century gothic', arial, sans-serif;
+	margin: 0 0 0 9px;
+}
+
+.logo_text h1, .logo_text h1 a, .logo_text h1 a:hover{
+	padding: 22px 0 0 0;
+	color: #fff;
+	letter-spacing: 0.1em;
+	text-decoration: none;
+}
+
+.logo_text h2{
+	font-size: 1em;
+	padding: 4px 0 0 0;
+	color: #aeb002;
+}
+
+.menubar{
+	width: 900px;
+	height: 46px;
+}
+
+ul.menu{
+	float: right;
+}
+ul.menu li{
+	float: left;
+	padding: 0 0 0 9px;
+	list-style: none;
+	margin: 1px 2px 0 0;
+}
+
+ul.menu li a{
+	font: normal 100% 'trebuchet ms', sans-serif;
+	display: block;]
+	height: 20px;
+	padding: 6px 35px 5px 28px;
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.menu li.selected a{
+	color:#aeb002;
+}
+
+ul.menu li a:hover{
+	color:#e4ec04;
+}
+
+.site_content{
+	width: 880px;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+	background-color: white;
+	height: 100%;
+}
+
+.sidebar_container{
+	float: right;
+	width: 224px;
+	height: 80%;
+	margin-bottom: 10%;
+}
+
+.sidebar{
+	float: right;
+	width: 222px;
+	padding: 5%;
+	margin: 0 0 16px 15%;
+	border: solid 1px #f2f2f2;
+	border-radius: 5px;
+	background-color: #f9f9f9;
+	height: 80%;
+}
+
+.btn{
+	padding: 8px;
+	background-color: white;
+	cursor: pointer;
+}
+
+.sidebar h2{
+	color: #137cb2;
+	margin: 0 0 5px 0;
+}
+
+.lables_passreg_text{
+	font-size: 0.7em;
+	margin-top: 3%;
+	margin-left: 2%;
+}
+
+.sidebar ul{
+	margin: 0;
+}
+
+.sidebar ul li{
+	list-style-type: none;
+	margin: 0 0 0 0;
+	width: 85%;
+}
+
+.sidebar .rating_sidebar{
+	float: right;
+}
+
+.info_film_page{
+	margin-top: 2%;
+	margin-bottom: 4%;
+}
+
+.info_film_page .label{
+	font-size: 1.2em;
+}
+
+.info_film_page .value{
+	font-size: 1em;
+	color: #8B658B;
+	margin-right: 3%;
+}
+
+.description_film{
+	margin-bottom: 30%;
+}
+
+.description_film img{
+	float: left;
+	margin-right: 2%;
+	border-radius: 5px;
+	border: solid 5px #aeb002;
+	width: 30%;
+}
+
+.reviews{
+	margin-bottom: 4%;
+	font-size: 0.9em;
+}
+
+.reviews .review_name{
+	background-color: #8B658B;
+	color: white;
+	padding: 1%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.reviews .review_text{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+}
+
+.send{
+	padding-bottom: 4%;
+}
+
+.send input[type="text"], textarea{
+	border: solid 1px #c3c3c3;
+	margin-bottom: 3%;
+}
+
+.send input[type="text"]{
+	width: 98%;
+}
+
+.send textarea{
+
+	width: 624px;
+	height: 200px;
+}
+
+
+.send input[type="submit"]{
+	background-color: #8B658B;
+	padding: 3%;
+	color: white;
+	border-radius: 5px;
+}
+
+
+
+.send_review{
+	padding-bottom: 4%;
+}
+
+
+.send_review input[type="text"], textarea{
+	border: solid 1px #c3c3c3;
+	margin-bottom: 3%;
+}
+
+.send_review input[type="text"]{
+	width: 85%;
+}
+
+.send_review textarea{
+	width: 88%;
+	height: 200px;
+}
+
+
+.send_review input[type="submit"]{
+	background-color: #8B658B;
+	padding: 3%;
+	color: white;
+	border-radius: 5px;
+}
+
+
+
+.info_film{
+	margin-bottom: 5%;
+	background-color: #f9f9f9;
+	padding: 5%;
+	height: 270px;
+}
+
+.info_film img{
+	float: left;
+	margin-right: 2%;
+	border-radius: 5px;
+	border: solid 5px #dad7d5;
+	width: 150px;
+}
+
+.button{
+	background-color: #8B658B;
+	padding: 2%;
+	border-radius: 5px;
+	color: white;
+	float: right;
+	margin-top: 5%;
+	clear: both;
+	font-size: 0.8em;
+}
+
+.button a{
+	color: white;
+}
+
+
+table{
+	width: 100%;
+	border: solid 1px #f4f4f4;
+}
+
+td{
+	padding: 2%;
+	border: solid 1px #f4f4f4;
+}
+
+td img{
+	width: 60px;
+	vertical-align: middle;
+}
+
+.center{
+	text-align: center;
+}
+
+.footer{
+	width: 100%;
+	height: 3%;
+	padding: 28px 0 5px 0;
+	text-align: center;
+	background-color: #8B658B;
+	color: #a8aa94;
+	margin-left: 0px;
+	margin-right: 0px;
+	min-width: 900px;
+	position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+}
+
+.content{
+	text-align: left;
+	width: 620px;
+	padding: 0 0 0 5px;
+	float: left;
+	margin-bottom: 5%;
+}
+
+.content a{
+	text-decoration: none;
+}
+
+.films_block{
+	margin-bottom: 5%;
+}
+
+.films_block img{
+	border-radius: 5px;
+	border: solid 3px #aeb002;
+	width: 22%;
+	height: 210px;
+}
+
+.posts_content{
+	font-size: 0.8em;
+}
+
+.footer a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+.footer a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer p{
+	padding: 0 0 10px 0;
+}
+
+
+
+
+/*  NEWS1 page  */
+
+.content #it{
+	width: 98%;
+	border-radius: 5px;
+	border: solid 3px #aeb002;
+	height: 30%;
+
+}
+
+/*  NEWS2 page  */
+
+.content #val{
+	width: 98%;
+	border-radius: 5px;
+	border: solid 3px #aeb002;
+	height: 40%;
+}
+
+
+/* REGISTER PAGE */
+
+.content. .registr{
+	margin: 0 auto;
+}
+
+.registr input[type="text"],.registr input[type="password"]{
+	width: 70%;
+	border-radius: 3px;
+	border: solid 1px #aeb002;
+	margin-bottom: 1%;
+}
+
+.registr input[type="submit"]{
+	margin-top: 10px;
+	background-color: #8B658B;
+	padding: 3%;
+	color: white;
+	border-radius: 5px;
+}
+
+.forgetpass input[type="text"]{
+	width: 70%;
+	border-radius: 3px;
+	border: solid 1px #aeb002;
+	margin-bottom: 1%;
+}
+
+.forgetpass input[type="submit"]{
+	margin-top: 10px;
+	background-color: #8B658B;
+	padding: 10px;
+	color: white;
+	border-radius: 5px;
+}
+
+/*  CSS Mobile */
+
+
+@media only screen 
+and (min-device-width: 320px)
+and (max-device-width: 560px){
+
+	.header{
+		background-color: #257965;
+		min-width: 100%;
+		height: 20%;
+		text-align: center;
+	}
+
+
+	.logo{
+		width: 100%;
+	}
+
+	.site_content{
+		width: 100%;
+	}
+
+	.content{
+		width: 100%;
+		text-align: center;
+	}
+
+	.menubar{
+		width: 100%;
+		height: 100%;
+	}
+
+	.site_content{
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.sidebar_conteiner{
+		display: none;
+	}
+
+	.footer{
+		display: none;
+	}
+
+	ul.menu{
+		float: none;
+	}
+
+	ul.menu li{
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+
+	.logo h1{
+		font: normal 235% 'centry gothic', arial, sans-serif;
+	}
+
+	.logo h2{
+		font: normal 100% 'centry gothic', arial, sans-serif;
+		color: white;
+	}
+
+	.content h1, h2{
+		font: normal 110% 'centry gothic', arial;
+	}
+
+	.film_blog img{
+		width: 43%;
+	}
+
+	.posts_content p{
+		line-height: 1.5em;
+		padding: 3%;
+		text-align: left;
+	}
+
+
+	.posts p{
+		font-size: 120%;
+	}	
+
+
+
+	/*  filims page */
+
+	.info_film{
+		float: none;
+		width: 100%;
+	}
+
+	.info_film img{
+		width: 90%;
+		margin-bottom: 5%;
+	}
+
+	.button{
+		float: none;
+	}
+
+	/* rating page  */
+
+	table{
+		display: block;
+	}
+
+	th{
+		font-size: 75%
+	}
+
+	td{
+
+		padding: 0;
+		margon: 0;
+		font-size: 95%;
+		text-align: left;
+	}
+
+
+	/*   show page  */
+
+	iframe{
+		width: 88%;
+		height: 100%;
+	}
+
+	.description_film{
+		width: 90%;
+		text-align: left;
+		margin-left: 2%;
+	}
+
+	.description_film img{
+		float: none;
+		width: 73%;
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin-left: 11%;
+		margin-bottom: 7%;
+	}
+
+	.reviews{
+		text-align: left;
+		width: 96%;
+	}
+
+	.send input[type="text"]{
+		width: 80%;
+	}
+
+	.send textarea{
+		width: 85%
+	}
+
+}
