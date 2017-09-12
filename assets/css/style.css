@@ -10,7 +10,7 @@ body{
 }
 
 p{
-	padding: 0 0 20px 0;
+	padding: 0 0 0 0;
 	line-height: 1.7em;
 }
 
@@ -280,9 +280,11 @@ ul.menu li a:hover{
 
 .send_review input[type="submit"]{
 	background-color: #8B658B;
-	padding: 3%;
+	padding: 2%;
 	color: white;
 	border-radius: 5px;
+	font-size: 0.8em;
+	cursor: pointer;
 }
 
 
@@ -294,7 +296,12 @@ ul.menu li a:hover{
 	height: 270px;
 }
 
-.info_film img{
+.info_film p{
+	line-height: normal;
+}
+
+
+.info_film a img{
 	float: left;
 	margin-right: 2%;
 	border-radius: 5px;
@@ -308,7 +315,7 @@ ul.menu li a:hover{
 	border-radius: 5px;
 	color: white;
 	float: right;
-	margin-top: 5%;
+	margin-top: 3%;
 	clear: both;
 	font-size: 0.8em;
 }
@@ -458,10 +465,10 @@ td img{
 
 @media only screen 
 and (min-device-width: 320px)
-and (max-device-width: 560px){
+and (max-device-width: 568px){
 
 	.header{
-		background-color: #257965;
+		background-color: #8B658B;
 		min-width: 100%;
 		height: 20%;
 		text-align: center;
@@ -491,10 +498,16 @@ and (max-device-width: 560px){
 		text-align: center;
 	}
 
-
-	.sidebar_conteiner{
+	.hidden{
 		display: none;
 	}
+
+	.sidebar_container{
+		display: none;
+	}
+	
+
+	
 
 	.footer{
 		display: none;
@@ -510,6 +523,10 @@ and (max-device-width: 560px){
 		float: none;
 	}
 
+	.logo{
+		padding-bottom: 20px;
+	}
+
 	.logo h1{
 		font: normal 235% 'centry gothic', arial, sans-serif;
 	}
@@ -521,16 +538,21 @@ and (max-device-width: 560px){
 
 	.content h1, h2{
 		font: normal 110% 'centry gothic', arial;
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
 	}
 
-	.film_blog img{
+	.films_block a img{
 		width: 43%;
 	}
 
 	.posts_content p{
 		line-height: 1.5em;
 		padding: 3%;
-		text-align: left;
+		text-align: justify;
+		padding-left: 11px;
+		padding-right: 11px;
 	}
 
 
@@ -545,21 +567,35 @@ and (max-device-width: 560px){
 	.info_film{
 		float: none;
 		width: 100%;
+		height: 20%;
+		margin: 0 auto;
 	}
 
-	.info_film img{
-		width: 90%;
+	.info_film a img{
+		width: 85%;
 		margin-bottom: 5%;
+
+	}
+
+	.info_film p{
+		text-align: justify;
+		width: 85%;
+		line-height: 1.4em;
 	}
 
 	.button{
 		float: none;
+		width: 85%;
+		margin-top: 5%;
+
 	}
+	
 
 	/* rating page  */
 
 	table{
 		display: block;
+		width: 95%;
 	}
 
 	th{
@@ -567,7 +603,6 @@ and (max-device-width: 560px){
 	}
 
 	td{
-
 		padding: 0;
 		margon: 0;
 		font-size: 95%;
@@ -580,22 +615,31 @@ and (max-device-width: 560px){
 	iframe{
 		width: 88%;
 		height: 100%;
+		margin: 0 auto;
 	}
 
 	.description_film{
 		width: 90%;
-		text-align: left;
-		margin-left: 2%;
+		height: 40%;
+		margin-bottom: 5%; 
+		
 	}
+		
+	.description_film p{
+		margin-left: 8%;
+		text-align: justify;
+	}
+
+	
 
 	.description_film img{
 		float: none;
-		width: 73%;
+		width: 88%;
 		display: block;
 		margin: 0;
 		padding: 0;
-		margin-left: 11%;
-		margin-bottom: 7%;
+		margin-left: 8%;
+		margin-bottom: 5%;
 	}
 
 	.reviews{
@@ -609,6 +653,23 @@ and (max-device-width: 560px){
 
 	.send textarea{
 		width: 85%
+	}
+
+	/*  news page  */
+
+	.content_mobile #val{
+		width: 95%;
+		margin-right: 3%
+	}
+
+	.content_mobile #it{
+		width: 95%;
+		margin-right: 3%
+	}
+
+	.content_mobile p {
+		text-align: justify;
+		width: 95%;
 	}
 
 }
